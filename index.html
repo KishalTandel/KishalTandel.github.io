@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,84 +14,106 @@
     <link rel="preload" as="image" href="assets/toggle_icon/light/moon_filled.png">
     <link rel="preload" as="image" href="assets/toggle_icon/dark/sun_filled.png">
     <script type="text/javascript" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
 </head>
 
 <body>
-    <div class="info_container">
-        <div class="favicon"><img src="assets/favicon/dark/favicon_512.png" style="position:absolute" class="hide" id="dark_icon"/>
-            <img  src="assets/favicon/light/favicon_512.png" style="position:absolute" class="hide" id="light_icon"></div>
-        <div class="name">Kishal Tandel</div>
-        <div class="links">
-            <a href="https://kishaltandel.github.io/Books-Solutions/" style="color:inherit; text-decoration-line: none;" >Books' Solutions</a>
-            <a href="https://github.com/KishalTandel/" target="_M" 
-            style="color:inherit; text-decoration-line: none;">github</a>
-        </div>
-    </div>   
-
-    <br/>
-
-    <div class="nav_bar">
-        <div class="web_link">
-            <p style="font-weight: 550;">kishaltandel</p><p>.github.io</p>
-        </div>
-        <div class="sub_nav">
-            <div class="Books_Solutions">
-                 <a href="https://kishaltandel.github.io/Books-Solutions/" style="color:inherit; text-decoration-line: none;">Books' Solutions</a>
+    <header>
+        <div class="info_container">
+            <div class="favicon">
+                <img src="assets/favicon/dark/favicon_512.png" 
+                     style="position:absolute" class="hide" id="dark_icon"/>
+                <img src="assets/favicon/light/favicon_512.png" 
+                     style="position:absolute" class="hide" id="light_icon">
             </div>
-            <div class="github"><a href="https://github.com/KishalTandel/" target="_M" 
-            style="color:inherit; text-decoration-line: none;">github</a></div>
-            <div class="toggle"><img src="assets/toggle_icon/dark/sun_filled.png" id="dark_toggle" style="position:absolute" class="hide"/>
-                <img src="assets/toggle_icon/light/moon_filled.png" id="light_toggle" style="position:absolute" class="hide"/>
+            <div class="name">
+                Kishal Tandel
             </div>
+            <div class="links">
+                <a href="https://kishaltandel.github.io/Books-Solutions/" 
+                   style="color:inherit; text-decoration-line: none;" >Books' Solutions</a>
+                <a href="https://github.com/KishalTandel/" target="_blank" 
+                   style="color:inherit; text-decoration-line: none;">github</a>
+            </div>
+        </div>   
+
+        <nav>
+            <div class="web_link">
+                <p style="font-weight: 550;font-size: 1.2em;">kishaltandel</p><p>.github.io</p>
+            </div>
+            <ul class="sub_nav">
+                <li class="Books_Solutions">
+                     <a href="https://kishaltandel.github.io/Books-Solutions/" 
+                        style="color:inherit; text-decoration-line: none;">Books' Solutions</a>
+                </li>
+                <li class="github"><a href="https://github.com/KishalTandel/" target="_M" 
+                style="color:inherit; text-decoration-line: none;">github</a>
+                </li>
+                <li class="toggle">
+                    <img src="assets/toggle_icon/dark/sun_filled.png" id="dark_toggle" 
+                         style="position:absolute" class="hide"/>
+                    <img src="assets/toggle_icon/light/moon_filled.png" id="light_toggle" 
+                         style="position:absolute" class="hide"/>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="quote_container">
+        <p class="quotation"></p>
+        <p class="author"></p>
+        </section>
+
+        <section class="card_container">
+            <div class="about"><p>Hello!</p>
+
+            <br/>
+
+            <p>I am <span style="font-weight: 600;">Kishal Tandel</span>,
+            a second year undergraduate student at <span style="font-weight: 600;">IISER Kolkata</span>.</p>
+        
+            <br/>
+
+            <p>I love <span style="font-weight: 600;">Mathematics, Physics</span> and 
+            <span style="font-weight: 600;">Programming</span>. I am proficient in 
+            <span style="font-weight: 600;position: relative ;z-index: -100;">\(\LaTeX\)</span> and have experience coding in 
+            <span style="font-weight: 600;">Python,Java,C</span> and <span style="font-weight: 600;">C++</span>.
+            Additionaly, I have worked with <span style="font-weight: 600;">HTML,CSS</span> and 
+            <span style="font-weight: 600;">JavaScript</span> while developing this website.</p>
+        
+            <br/>
+
+            <p>I am also a <span style="font-weight: 600;">cuber</span> and 
+            <span style="font-weight: 600;">star gazer</span>.</p>
+        
+            <br/>
+
+            <p>Find my work here. <span style="font-weight: 600;">Happy reading</span>.</p></div>
+
+            <div class="card" id="1"></div>
+            <div class="card" is="2"></div>
+            <div class="card" id="3"></div>
+            <div class="card" id="4"><p></p></div>
+            <div class="card" id="5"></div>
+            <div class="card" id="6"></div>
+            <div class="card" id="7"></div>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="social-media">
+            <li class="whatsapp"><a href="https://wa.me/919512397990" target="_blank" style="color:inherit; text-decoration-line: none;">WhatsApp</a></li>
+            <li class="gmail"><a href="mailto:kishaltandel01@gmail.com" target="_blank" style="color:inherit; text-decoration-line: none;">Gmail</a></li>
+            <li class="youtube"><a href="https://www.youtube.com/@KishalTandel" target="_blank" style="color:inherit; text-decoration-line: none;">YouTube</a></li>
+        </ul>
+
+        <div class="copyright">
+            <p>&copy; 2025 Kishal Tandel. All rights reserved.</p>
         </div>
-    </div>
-
-    <br/>
-
-    <div class="quote_container">
-       <p class="quotation"></p>
-       <p class="author"></p>
-    </div>
-
-    <br/>
-
-    <div class="card_container">
-        <div class="about"><p>Hello!</p>
-
-        <br/>
-
-        <p>I am <span style="font-weight: 600;">Kishal Tandel</span>,
-         a second year undergraduate student at <span style="font-weight: 600;">IISER Kolkata</span>.</p>
-        
-        <br/>
-
-        <p>I love <span style="font-weight: 600;">Mathematics, Physics</span> and 
-        <span style="font-weight: 600;">Programming</span>. I am proficient in 
-        <span style="font-weight: 600;position: relative ;z-index: -100;">\(\LaTeX\)</span> and have experience coding in 
-        <span style="font-weight: 600;">Python,Java,C</span> and <span style="font-weight: 600;">C++</span>.
-        Additionaly, I have worked with <span style="font-weight: 600;">HTML,CSS</span> and 
-        <span style="font-weight: 600;">JavaScript</span> while developing this website.</p>
-        
-        <br/>
-
-        <p>I am also a <span style="font-weight: 600;">cuber</span> and 
-        <span style="font-weight: 600;">star gazer</span>.</p>
-        
-        <br/>
-
-        <p>Find my work here. <span style="font-weight: 600;">Happy reading</span>.</p></div>
-
-        <div class="card" id="1"></div>
-        <div class="card" is="2"></div>
-        <div class="card" id="3"></div>
-        <div class="card" id="4"><p></p></div>
-        <div class="card" id="5"></div>
-        <div class="card" id="6"></div>
-        <div class="card" id="7"></div>
-    </div>
-
+    </footer>
+    
     <script src="script.js"></script>  
     <script src="quotes.js"></script>
 </body>
