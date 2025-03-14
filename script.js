@@ -1,6 +1,6 @@
 let body = document.body;
 let toggle = document.querySelector('.toggle');
-let navBar = document.querySelector(".nav_bar");
+let navBar = document.querySelector("nav");
 let name = document.querySelector('.name');
 let favIcon = document.querySelector(".favicon");
 let infoContainer = document.querySelector(".info_container");
