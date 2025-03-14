@@ -26,14 +26,22 @@ body{
   font-family :  Helvetica, sans-serif,Arial;
 }
 
+header{
+  background-color: inherit;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+
 .info_container{
   display : flex;
   flex-direction : column;
-  justify-content : space-between;
-  height : 11.5em;
+  justify-content : space-evenly;
+  height : auto;
   align-items : center;
   height : 8em;
-  margin-top: 1.5em;
 }
 
 .info_container img{
@@ -48,7 +56,6 @@ body{
 }
 
 .favicon img{
-  margin-top: 3em;
   width: 6em;
   height: auto;
 }
@@ -57,8 +64,7 @@ body{
   font-size : 2.3em;
   width : auto;
   font-weight : 500;
-  margin-top: 1.5em;
- 
+  margin-top: 0.75em;
 }
 
 .links{
@@ -69,7 +75,7 @@ body{
   font-size : 1.1em;
 }
 
-.nav_bar{
+nav{
   position : fixed;
   top : 0em;
   left : 0em;
@@ -83,12 +89,12 @@ body{
   transition: box-shadow 0s ease, transform 0.25s ease;
 }
 
-.dark .nav_bar{
+.dark nav{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-bottom: solid #1a1a1a 0.1em;
 }
 
-.light .nav_bar{
+.light nav{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-bottom:  solid #b8b8b8 0.1em;
 }
@@ -105,6 +111,10 @@ body{
 
 .web_link p{
   cursor: pointer;
+}
+
+ul{
+  list-style: none;
 }
 
 .sub_nav{
@@ -140,6 +150,13 @@ body{
   opacity : 0.95;
 }
 
+main{
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
+}
+
 .quote_container{
   display : flexbox;
   border : solid 0.01em;
@@ -152,7 +169,6 @@ body{
   line-height : 0.5em;
   white-space : pre-wrap; 
   min-height : 7.2em;
-  margin-top: -1em;
 }
 
 .quote_container p{
@@ -160,23 +176,22 @@ body{
 }
 
 .card_container{
-  margin-top: -0.5em;
   width : 45.5em;
   display : flex;
   flex-direction : column;
   flex-wrap : wrap;
   justify-content : top;
-  align-items : space-around;
+  align-items : center;
   height : 70em;
   border-radius : 0.5em;
 }
 
 .card{
   display : flex;
-  width : 22.25em;
+  width : 22em;
   border : solid 0.01em;
   height : 15em;
-  margin-top : 0.6em;
+  margin-top : 0.75em;
   border-radius : 0.35em;
   transition : background-color 0.5 ease, color 0.5 ease;
   background-color: inherit;
@@ -190,7 +205,7 @@ body{
 }
 
 .about{
-  margin-top : 0.6em;
+  margin-top : 0.75em;
   line-height : 1.45em;
   width : 22.25em;
   font-size : 1em;
@@ -222,6 +237,26 @@ body{
 .light .card:hover, .light .quote_container:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
   border : solid rgba(34,34,42,0.9) 0.01em;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  width:44em;
+  height:4em;
+  justify-content: space-between;
+}
+
+.social-media{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.15em;
+}
+
+.copyright{
+  text-align: center;
 }
 
 @media (max-width:799px) {
@@ -256,7 +291,6 @@ html,body{
 }
 
 .name{
-  margin-top: 2em;
   font-size : 1.7em;
 }
 
@@ -265,6 +299,8 @@ html,body{
   width : 10em;
   font-size : 1em;
   flex-direction: column;
+  justify-content: space-between;
+  height: 2.5em;
 }
 
 .favicon img{
@@ -276,7 +312,6 @@ html,body{
   width : 93.1%;
   font-size : 0.8em;
   border-radius : 0.25em;
-  margin-top: -2em;
   height: auto;
 }
 
@@ -298,4 +333,9 @@ html,body{
   width : 95%;
   border-radius : 0.25em;
 }
+
+footer{
+  width:92%;
+}
+
 } 
