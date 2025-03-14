@@ -63,7 +63,7 @@ let object;
 let callBack= (entries) => {
     if (!(entries[0].isIntersecting)){
         navBar.style.transform='translateY(0%)';
-        navBar.style.top=0}else{
+        }else{
         navBar.style.transform='translateY(-100%)'}
 }
 
