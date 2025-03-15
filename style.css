@@ -267,6 +267,7 @@ html,body{
 
 nav{
   height :2.5em;
+  background-color: inherit;
 }
 
 .web_link{
@@ -288,6 +289,7 @@ nav{
 
 .info_container{
   height:7.5em;
+  background-color: inherit;
 }
 
 .name{
