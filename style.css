@@ -27,7 +27,6 @@ body{
 }
 
 header{
-  background-color: inherit;
   height: auto;
   display: flex;
   justify-content: center;
