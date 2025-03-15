@@ -27,7 +27,6 @@ body{
 }
 
 header{
-  transition : background-color 0s ease;
   background-color: inherit;
   height: auto;
   display: flex;
@@ -37,8 +36,6 @@ header{
 }
 
 .info_container{
-  transition : background-color 0s ease;
-  background-color: inherit;
   display : flex;
   flex-direction : column;
   justify-content : space-evenly;
@@ -89,8 +86,7 @@ nav{
   transform : translateY(-100%);
   background-color: inherit;
   color: inherit;
-  background-color: inherit;
-  transition: box-shadow 0s ease, transform 0.25s ease,background-color 0s ease;
+  transition: box-shadow 0s ease, transform 0.25s ease;
 }
 
 .dark nav{
@@ -271,7 +267,6 @@ html,body{
 
 nav{
   height :2.5em;
-  background-color: inherit;
 }
 
 .web_link{
@@ -293,7 +288,6 @@ nav{
 
 .info_container{
   height:7.5em;
-  background-color: inherit;
 }
 
 .name{
