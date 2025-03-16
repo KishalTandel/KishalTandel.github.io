@@ -26,19 +26,19 @@ body{
   font-family :  Helvetica, sans-serif,Arial;
 }
 
-header{
+.dark header, .light header{
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 3em;
+  background-color: inherit;
 }
 
 .info_container{
   display : flex;
   flex-direction : column;
   justify-content : space-evenly;
-  height : auto;
   align-items : center;
   height : 8em;
 }
