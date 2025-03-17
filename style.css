@@ -3,7 +3,7 @@
   padding : 0em;
 }
 
-.hide{
+.hidden{
   display : none;
 }
 
@@ -66,14 +66,21 @@ body{
   margin-top: 0.75em;
 }
 
-.links{
+.dark .name{
+  color: #ffffff;
+}
+
+.light .name{
+  color: #22222a;
+}
+
+.links ul{
   width : 12em;
   display : flex;
   justify-content : space-around;
   align-items : center;
   font-size : 1.1em;
 }
-
 
 nav{
   position : fixed;
@@ -124,14 +131,6 @@ ul{
   font-size : 1.2em;
 }
 
-.dark .sub_nav{
-  color: rgb(175, 208, 244);
-}
-
-.light .sub_nav{
-  color:rgb(5, 73, 145);
-}
-
 .toggle{
   display: flex;
   justify-content: center;
@@ -140,11 +139,11 @@ ul{
 }
 
 .toggle img{
-  width : 1.3em;
+  width : 1.1em;
   height : auto;
 }
 
-.links a,.toggle img,.github,.sub_nav a,.favicon img:hover{
+li a,.toggle img,.favicon img{
   cursor : pointer;
 }
 
@@ -168,6 +167,7 @@ main{
   line-height : 0.5em;
   white-space : pre-wrap; 
   min-height : 7.2em;
+  cursor: pointer;
 }
 
 .quote_container p{
@@ -195,6 +195,7 @@ main{
   transition : background-color 0.5 ease, color 0.5 ease;
   background-color: inherit;
   color: inherit;
+  cursor: pointer;
 }
 
 
@@ -213,10 +214,6 @@ main{
 .dark .about p, .light .about p{
   padding-left: 0.5em;
   padding-right: 0.5em;
-}
-
-.quote_container:hover,.card:hover{
-  cursor: pointer;
 }
 
 .dark .card, .dark .quote_container{
@@ -254,13 +251,28 @@ footer{
   font-size: 1.15em;
 }
 
-
-.links a:hover, footer li a:hover{
-   opacity: 0.75;
+.dark li a{
+  color: rgb(203, 223, 247);
 }
 
-.sub_nav a:hover,.toggle img:hover{
+.light li a{
+  color:rgb(6, 72, 144);
+}
+
+li a:hover{
   opacity: 0.8;
+}
+
+.dark li a:hover{
+   color: rgb(243, 226, 252);
+}
+
+.light li a:hover{
+  color: rgb(60, 8, 88);
+}
+
+li a:active{
+  opacity: 0.9;
 }
 
 .favicon img:hover{
@@ -303,7 +315,7 @@ nav{
 }
 
 
-.links{
+.links ul{
   width : 10em;
   font-size : 1em;
   flex-direction: column;
