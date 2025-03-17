@@ -322,7 +322,7 @@ nav{
   align-items: center;
 }
 
-.about{
+.dark .about, .light .about{
   font-size : 0.9em;
   text-align : left;
   line-height : 1.4em;
