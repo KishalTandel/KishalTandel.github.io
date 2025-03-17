@@ -22,17 +22,17 @@ let setTheme = (theme) => {
    if (theme === 'dark'){
        body.classList.remove("light")
        body.classList.add("dark")
-       darkIcon.classList.remove('hide');
-       lightIcon.classList.add('hide');
-       darkToggle.classList.remove('hide');
-       lightToggle.classList.add("hide");
+       darkIcon.classList.remove('hidden');
+       lightIcon.classList.add('hidden');
+       darkToggle.classList.remove('hidden');
+       lightToggle.classList.add("hidden");
     } else{
         body.classList.remove("dark")
         body.classList.add("light")
-        darkIcon.classList.add('hide');
-        lightIcon.classList.remove('hide');
-        darkToggle.classList.add('hide');
-        lightToggle.classList.remove("hide");
+        darkIcon.classList.add('hidden');
+        lightIcon.classList.remove('hidden');
+        darkToggle.classList.add('hidden');
+        lightToggle.classList.remove("hidden");
     }
     rotation += 360;
     toggle.style.transform = `rotate(${rotation}deg)`;
@@ -102,7 +102,7 @@ subLinks.forEach((link)=> {
 
 function scrollToTop(){
     function step(){
-        window.scrollBy(0,-30);
+        window.scrollBy(0,-100);
         if(window.scrollY>0){ requestAnimationFrame(step)}
     } requestAnimationFrame(step)
 };
