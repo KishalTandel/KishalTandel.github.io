@@ -203,14 +203,14 @@ main{
   font-size : 1.1em;
 }
 
-.about{
+.dark .about, .light .about{
   margin-top : 0.75em;
   line-height : 1.45em;
   width : 22.25em;
   font-size : 1em;
 }
 
-.about p{
+.dark .about p, .light .about p{
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
