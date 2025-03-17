@@ -9,12 +9,12 @@
 
 .dark{
   background-color : #22222a;
-  color : #ffffff; 
+  color : #ffffffc9; 
 }
 
 .light{
   background-color : #ffffff;
-  color : #22222a;
+  color : #22222af4;
 }
 
 body{
@@ -23,7 +23,7 @@ body{
   flex-direction : column;
   justify-content : center;
   align-items : center;
-  font-family :  Helvetica, sans-serif,Arial;
+  font-family :  'Roboto Condensed',Helvetica, sans-serif,Arial,'Big Shoulders';
 }
 
 .dark header, .light header{
@@ -74,6 +74,7 @@ body{
   font-size : 1.1em;
 }
 
+
 nav{
   position : fixed;
   top : 0em;
@@ -105,7 +106,6 @@ nav{
   width : auto;
   margin-left : 0.5em;
   font-size : 1.8em;
-  font-family :  Montserrat;
 }
 
 .web_link p{
@@ -144,9 +144,8 @@ ul{
   height : auto;
 }
 
-.links a,.toggle img,.github,.Books_Solutions,.favicon img:hover{
+.links a,.toggle img,.github,.sub_nav a,.favicon img:hover{
   cursor : pointer;
-  opacity : 0.95;
 }
 
 main{
@@ -242,10 +241,10 @@ main{
 footer{
   display: flex;
   flex-direction: column;
-  margin-top: 1.5em;
-  margin-bottom: 1em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
   width:44em;
-  height:4em;
+  height:auto;
   justify-content: space-between;
 }
 
@@ -255,8 +254,17 @@ footer{
   font-size: 1.15em;
 }
 
-.copyright{
-  text-align: center;
+
+.links a:hover, footer li a:hover{
+   opacity: 0.75;
+}
+
+.sub_nav a:hover,.toggle img:hover{
+  opacity: 0.8;
+}
+
+.favicon img:hover{
+  opacity: 0.95;
 }
 
 @media (max-width:799px) {
