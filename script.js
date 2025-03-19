@@ -110,3 +110,15 @@ function scrollToTop(){
 window.addEventListener('load', () => {
     getQuote();
 });
+
+let tooltip=document.querySelector('.tooltip');
+
+toggle.addEventListener('mouseover',(e)=>{
+    tooltip.style.left=`${e.clientX-22}px`;
+    tooltip.style.top=`${e.clientY+23}px`;
+    tooltip.classList.remove('hidden')
+})
+
+toggle.addEventListener('mouseleave',()=>{
+    tooltip.classList.add('hidden');
+})
