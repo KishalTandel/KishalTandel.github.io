@@ -306,15 +306,15 @@ li a:active{
 .dark .tooltip::after{
   padding: 0.25em;
   content: 'Light Mode';
-  background-color: rgba(0, 0, 0, 0.82);
-  color: rgba(255, 255, 255, 0.92);
+  background-color: rgba(0, 0, 0, 0.45);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .light .tooltip::after{
   padding: 0.25em;
   content: 'Dark Mode';
-  background-color: rgba(0, 0, 0, 0.82);
-  color: rgba(255, 255, 255, 0.92);
+  background-color: rgba(0, 0, 0, 0.78);
+  color: rgba(255, 255, 255, 0.97);
 }
 
 
@@ -395,6 +395,10 @@ nav{
 
 footer{
   width:92%;
+}
+
+.tooltip{
+  display: none;
 }
 
 } 
