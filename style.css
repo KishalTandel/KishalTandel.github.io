@@ -198,10 +198,16 @@ main{
   cursor: pointer;
 }
 
-
-.quote_container .author{
-  font-weight : 700;
+.author{
   font-size : 1.1em;
+}
+
+.dark .author{
+  font-weight: 600;
+}
+
+.light .author{
+  font-weight: 500;
 }
 
 .dark .about, .light .about{
@@ -214,6 +220,14 @@ main{
 .dark .about p, .light .about p{
   padding-left: 0.5em;
   padding-right: 0.5em;
+}
+
+.dark .about span{
+  font-weight: 600;
+}
+
+.light .about span{
+  font-weight: 485;
 }
 
 .dark .card, .dark .quote_container{
