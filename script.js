@@ -113,12 +113,19 @@ window.addEventListener('load', () => {
 
 let tooltip=document.querySelector('.tooltip');
 
+let runTimeOut=[];
 toggle.addEventListener('mouseover',(e)=>{
-    tooltip.style.left=`${e.clientX-22}px`;
-    tooltip.style.top=`${e.clientY+23}px`;
-    tooltip.classList.remove('hidden')
+    let timeOut=setTimeout(()=>{
+        tooltip.style.left=`${e.clientX-23}px`;
+        tooltip.style.top=`${e.clientY+23}px`;
+    tooltip.classList.remove('hidden')},850)
+    runTimeOut.push(timeOut);
 })
 
 toggle.addEventListener('mouseleave',()=>{
+    runTimeOut.forEach((timeOut)=>{
+        clearTimeout(timeOut);
+    })
+    runTimeOut=[]
     tooltip.classList.add('hidden');
 })
