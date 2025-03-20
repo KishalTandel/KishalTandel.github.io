@@ -88,7 +88,7 @@ nav{
   left : 0em;
   display : flex;
   justify-content : space-between;
-  height : 3.3em;
+  height : 4em;
   width : 100%;
   transform : translateY(-100%);
   background-color: inherit;
@@ -121,6 +121,14 @@ nav{
 
 ul{
   list-style: none;
+}
+
+img{
+  position: absolute;
+}
+
+a{
+  text-decoration-line: none;
 }
 
 .sub_nav{
@@ -181,7 +189,7 @@ main{
   flex-wrap : wrap;
   justify-content : top;
   align-items : center;
-  height : 70em;
+  height : 72em;
   border-radius : 0.5em;
 }
 
@@ -202,31 +210,29 @@ main{
   font-size : 1.1em;
 }
 
-.dark .author{
-  font-weight: 600;
-}
-
-.light .author{
-  font-weight: 500;
-}
-
-.dark .about, .light .about{
+.about{
   margin-top : 0.75em;
-  line-height : 1.45em;
+  line-height : 1.6em;
   width : 22.25em;
   font-size : 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  height: 22em;
 }
 
 .dark .about p, .light .about p{
   padding-left: 0.5em;
   padding-right: 0.5em;
+  
 }
 
-.dark .about span{
-  font-weight: 600;
+.dark .about span,.dark .author,.dark .web_link #name{
+  font-weight: 580;
 }
 
-.light .about span{
+.light .about span,.light .author,.light .web_link #name{
   font-weight: 485;
 }
 
@@ -244,6 +250,7 @@ main{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
   border : solid rgba(255,255,255,0.8) 0.01em;
 }
+
 .light .card:hover, .light .quote_container:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
   border : solid rgba(34,34,42,0.8) 0.01em;
@@ -317,6 +324,10 @@ li a:active{
   color: rgba(255, 255, 255, 0.97);
 }
 
+.LaTeX{
+  position: relative;
+  z-index: -1;
+}
 
 @media (max-width:799px) {
  
@@ -325,7 +336,7 @@ html,body{
 }
 
 nav{
-  height :2.5em;
+  height :3em;
 }
 
 .web_link{
@@ -399,6 +410,14 @@ footer{
 
 .tooltip{
   display: none;
+}
+
+.about{
+  height: 24em;
+}
+
+.dark .about,.light .about{
+  line-height: 1.9em;
 }
 
 } 
