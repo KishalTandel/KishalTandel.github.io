@@ -64,8 +64,8 @@ let callBack= (entries) => {
     if (!(entries[0].isIntersecting)){
         navBar.style.transform='translateY(0%)';
         }else{
-        navBar.style.transform='translateY(-100%)'}
-}
+        navBar.style.transform='translateY(-100%)'
+}}
 
 let obj= new IntersectionObserver(callBack,object);
 obj.observe(infoContainer);
@@ -129,3 +129,13 @@ toggle.addEventListener('mouseleave',()=>{
     runTimeOut=[]
     tooltip.classList.add('hidden');
 })
+
+let progressBar=document.querySelector('.progress_bar')
+let main=document.querySelector('main')
+let footer=document.querySelector('footer')
+window.addEventListener("scroll", () => {
+    let top =-main.getBoundingClientRect().top;
+    let totalHeight =main.scrollHeight+footer.scrollHeight-document.documentElement.clientHeight;
+    let scrollPercent = (top/ totalHeight) * 100;
+    progressBar.style.width = scrollPercent + "%";
+  });
