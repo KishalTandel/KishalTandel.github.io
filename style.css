@@ -357,6 +357,10 @@ li a:active{
   z-index: -1;
 }
 
+.dark #one img{
+  filter: contrast(0.993)
+}
+
 .light #one img{
   filter: invert(1) brightness(130%);
 }
