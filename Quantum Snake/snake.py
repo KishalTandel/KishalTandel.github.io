@@ -27,7 +27,7 @@ head.direction = "none"
 food = turtle.Turtle()
 food.shape("circle")
 food.shapesize(0.5)
-food.color("#FF1111")
+food.color("#F01111")
 food.penup()
 food.goto(0, 100)
 
@@ -47,7 +47,7 @@ def spawn_barriers():
             barrier = turtle.Turtle()
             barrier.shape("square")
             barrier.shapesize(4)
-            barrier.color("#03A9F4")
+            barrier.color("#03A9B0")
             barrier.penup()
             barrier.goto(x, y)
             barriers.append(barrier)
@@ -169,7 +169,7 @@ def eat_food():
         #Add a new segment to the snake
         new_segment = turtle.Turtle()
         new_segment.shape("square")
-        new_segment.color("white")
+        new_segment.color("#DDDDD5")
         new_segment.penup()
         new_segment.hideturtle()
         segments.append(new_segment)
