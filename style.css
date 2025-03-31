@@ -211,12 +211,17 @@ main{
   flex-wrap : wrap;
   justify-content : top;
   align-items : center;
-  height : 72em;
+  height : 85em;
   border-radius : 0.5em;
+  color: inherit;
+  background-color: inherit;
 }
 
 .card{
   display : flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width : 22em;
   border : solid 0.01em;
   height : 15em;
@@ -226,6 +231,7 @@ main{
   background-color: inherit;
   color: inherit;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .author{
@@ -294,11 +300,11 @@ footer{
   font-size: 1.15em;
 }
 
-.dark li a{
+.dark li a,.dark .more{
   color: rgb(203, 223, 255);
 }
 
-.light li a{
+.light li a,.light .more{
   color:rgb(6, 72, 144);
 }
 
@@ -306,11 +312,11 @@ li a:hover{
   opacity: 0.8;
 }
 
-.dark li a:hover{
+.dark li a:hover,.dark .more:hover{
    color: rgb(233, 198, 252);
 }
 
-.light li a:hover{
+.light li a:hover,.light .more:hover{
   color: rgb(60, 8, 88);
 }
 
@@ -350,6 +356,37 @@ li a:active{
   position: relative;
   z-index: -1;
 }
+
+.light #one img{
+  filter: invert(1) brightness(130%);
+}
+
+#one img{
+  width: 100%;
+  height: auto; 
+  position: relative;
+  z-index: -1;
+  border-radius: auto;
+}
+
+#one{
+  height:30em;
+}
+
+.more{
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+
+.card p{
+  padding-left:0.75em;
+  padding-right:0.75em
+}
+
+.more a{
+  color: inherit;
+}
+
 
 @media (max-width:799px) {
  
