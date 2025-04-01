@@ -523,7 +523,7 @@ footer{
   .card:nth-child(3) { order: 2; }
 
   .dark #one img{
-    filter: contrast(0.949);
+    filter: contrast(0.96);
   }
 
 } 
