@@ -371,10 +371,11 @@ li a:active{
   position: relative;
   z-index: -1;
   border-radius: auto;
+  margin-top: 1em;
 }
 
 #one{
-  height:32.5em;
+  height:auto;
 }
 
 .more{
@@ -382,13 +383,21 @@ li a:active{
   margin-bottom: 1em;
 }
 
-.card p{
+.card p,.card h1{
   padding-left:0.75em;
-  padding-right:0.75em
+  padding-right:0.75em;
+  margin-top:0.5em;
 }
+
+
 
 .more a{
   color: inherit;
+}
+
+.mare{
+  margin-bottom:1em;
+  margin-top:1em;
 }
 
 #reading{
@@ -396,7 +405,7 @@ li a:active{
   flex-direction: column;
   justify-content: space-evenly;
   align-items: left;
-  height: 9.85em;
+  height: 9.917em;
   text-align: left;
 }
 
@@ -514,7 +523,7 @@ footer{
   .card:nth-child(3) { order: 2; }
 
   .dark #one img{
-    filter: contrast(0.987);
+    filter: contrast(1.01);
   }
 
 } 
