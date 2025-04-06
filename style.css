@@ -395,7 +395,7 @@ li a:active{
   color: inherit;
 }
 
-.mare{
+.more{
   margin-bottom:1em;
   margin-top:1em;
 }
@@ -419,6 +419,13 @@ li a:active{
   font-size: 1.5em;
 }
 
+#reading p{
+  color:inherit;
+}
+
+.dark .brief,.light .brief{
+  color:inherit;
+}
 
 
 
