@@ -211,7 +211,7 @@ main{
   flex-wrap : wrap;
   justify-content : top;
   align-items : center;
-  height : 33.5em;
+  height : 34em;
   border-radius : 0.5em;
   color: inherit;
   background-color: inherit;
@@ -224,7 +224,7 @@ main{
   align-items: center;
   width : 22em;
   border : solid 0.01em;
-  height : 15em;
+  height : auto;
   margin-top : 0.75em;
   border-radius : 0.35em;
   transition : background-color 0.5 ease, color 0.5 ease;
@@ -256,11 +256,11 @@ main{
   
 }
 
-.dark .about span,.dark .author,.dark .web_link #name{
+.dark .about span,.dark .author,.dark .web_link #name,.dark .title{
   font-weight: 580;
 }
 
-.light .about span,.light .author,.light .web_link #name{
+.light .about span,.light .author,.light .web_link #name,.light .title{
   font-weight: 485;
 }
 
@@ -396,8 +396,8 @@ li a:active{
 }
 
 .more{
-  margin-bottom:1em;
-  margin-top:1em;
+  margin-bottom:0.6em;
+  margin-top:0.6em;
 }
 
 #reading{
@@ -405,7 +405,7 @@ li a:active{
   flex-direction: column;
   justify-content: space-evenly;
   align-items: left;
-  height: 9.917em;
+  height: 10.133em;
   text-align: left;
 }
 
@@ -413,13 +413,7 @@ li a:active{
   width: 100%;
   margin-left: 2em;
   font-size: 1em;
-}
-
-#reading #read{
-  font-size: 1.5em;
-}
-
-#reading p{
+  margin-bottom: 0.3em;
   color:inherit;
 }
 
@@ -427,8 +421,19 @@ li a:active{
   color:inherit;
 }
 
+.title{
+  width: 100%;
+  text-align: left;
+  margin-left: 2em;
+  font-size: 1.5em;
+}
 
-
+#reading .title{
+  width: 100%;
+  text-align: left;
+  margin-left: 2em;
+  font-size: 1.25em;
+}
 
 @media (max-width:799px) {
  
