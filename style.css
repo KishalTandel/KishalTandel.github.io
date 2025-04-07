@@ -489,6 +489,7 @@ nav{
   font-size : 0.8em;
   border-radius : 0.25em;
   height: auto;
+  margin-top:1.5em;
 }
 
 .card_container{
@@ -535,7 +536,7 @@ footer{
   .card:nth-child(3) { order: 2; }
 
   .dark #one img{
-    filter: contrast(0.977);
+    filter: contrast(0.981);
   }
 
 } 
