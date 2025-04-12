@@ -230,8 +230,8 @@ main{
   transition : background-color 0.5 ease, color 0.5 ease;
   background-color: inherit;
   color: inherit;
-  cursor: pointer;
   overflow: hidden;
+  cursor: default;
 }
 
 .author{
@@ -300,23 +300,25 @@ footer{
   font-size: 1.15em;
 }
 
-.dark li a,.dark .more{
+.dark li a,.dark .more,.dark a{
   color: rgb(203, 223, 255);
+  cursor: pointer;
 }
 
-.light li a,.light .more{
+.light li a,.light .more,.light a{
   color:rgb(6, 72, 144);
+  cursor: pointer;
 }
 
 li a:hover{
   opacity: 0.8;
 }
 
-.dark li a:hover,.dark .more:hover{
+.dark li a:hover,.dark .more a:hover,.dark a:hover{
    color: rgb(233, 198, 252);
 }
 
-.light li a:hover,.light .more:hover{
+.light li a:hover,.light .more a:hover,.light a:hover{
   color: rgb(60, 8, 88);
 }
 
@@ -389,8 +391,6 @@ li a:active{
   margin-top:0.5em;
 }
 
-
-
 .more a{
   color: inherit;
 }
@@ -398,6 +398,9 @@ li a:active{
 .more{
   margin-bottom:0.6em;
   margin-top:0.6em;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 #reading{
@@ -536,7 +539,7 @@ footer{
   .card:nth-child(3) { order: 2; }
 
   .dark #one img{
-    filter: contrast(0.981);
+    filter: contrast(0.994);
   }
 
 } 
