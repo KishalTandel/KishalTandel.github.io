@@ -381,8 +381,12 @@ li a:active{
 }
 
 .more{
-  font-size: 1.3em;
+  font-size: 1.24em;
   margin-bottom: 1em;
+}
+
+.brief a{
+  font-size: 1.1em;
 }
 
 .card p,.card h1{
@@ -539,7 +543,7 @@ footer{
   .card:nth-child(3) { order: 2; }
 
   .dark #one img{
-    filter: contrast(0.994);
+    filter: contrast(0.991);
   }
 
 } 
