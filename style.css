@@ -77,9 +77,18 @@ body{
 .links ul{
   width : 12em;
   display : flex;
+  flex-direction: column;
   justify-content : space-around;
+  align-items: space-evenly;
   align-items : center;
   font-size : 1.1em;
+}
+
+.first-row, .second-row{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 nav{
@@ -442,6 +451,9 @@ li a:active{
   font-size: 1.25em;
 }
 
+.web_link a{
+  color: inherit;
+}
 @media (max-width:799px) {
  
 html,body{
@@ -543,7 +555,7 @@ footer{
   .card:nth-child(3) { order: 2; }
 
   .dark #one img{
-    filter: contrast(0.979);
+    filter: contrast(0.991);
   }
 
 } 
