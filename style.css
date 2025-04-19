@@ -555,3 +555,110 @@ footer{
   .links ul li:nth-child(4) { order: 3; }
 
 } 
+
+@media (max-width:420px) {
+  html,body{
+    overflow-x : hidden;
+  }
+  
+  nav{
+    height :3em;
+  }
+  
+  .web_link{
+    font-size : 0.8em;
+    width: 20%;
+  }
+  
+  .sub_nav{
+    font-size : 0.55em;
+    width: 65%;
+    margin-left: 7.5em;
+    justify-content: space-evenly;
+  }
+  
+  .toggle img{
+    width :1.1em;
+    height : auto;
+  }
+  
+  .info_container{
+    height:7.5em;
+  }
+  
+  .name{
+    font-size : 1.7em;
+  }
+  
+  
+  .links ul{
+    width : 10em;
+    font-size : 1em;
+    height: 2.5em;
+  }
+  
+  .favicon img{
+    width : 4.5em;
+    height : auto;
+  }
+  
+  .dark .quote_container,.light .quote_container{
+    width : 93.1%;
+    font-size : 0.8em;
+    border-radius : 0.25em;
+    height: auto;
+    margin-top:1.5em;
+  }
+  
+  .card_container{
+    width : 98%;
+    height :auto;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  
+  .dark .about, .light .about{
+    font-size : 0.9em;
+    text-align : left;
+    line-height : 1.4em;
+    width : 95%;
+  }
+  
+  .dark .card,.light .card{
+    width : 95%;
+    border-radius : 0.25em;
+  }
+  
+  footer{
+    width:92%;
+  }
+  
+  .tooltip{
+    display: none;
+  }
+  
+  .about{
+    height: 24em;
+  }
+  
+  .dark .about,.light .about{
+    line-height: 1.9em;
+  }
+  
+  .light .progress_bar{
+    height: 0.1em;
+  }
+  
+    .card:nth-child(1) { order: 1; }
+    .card:nth-child(2) { order: 3; }
+    .card:nth-child(3) { order: 2; }
+  
+    .dark #one img{
+      filter: contrast(0.991);
+    }
+  
+    .links ul li:nth-child(1) { order: 1; }
+    .links ul li:nth-child(2) { order: 4; }
+    .links ul li:nth-child(3) { order: 2; }
+    .links ul li:nth-child(4) { order: 3; }
+}
