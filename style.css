@@ -77,18 +77,11 @@ body{
 .links ul{
   width : 12em;
   display : flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content : space-around;
   align-items: space-evenly;
   align-items : center;
   font-size : 1.1em;
-}
-
-.first-row, .second-row{
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 nav{
@@ -493,8 +486,6 @@ nav{
 .links ul{
   width : 10em;
   font-size : 1em;
-  flex-direction: column;
-  justify-content: space-between;
   height: 2.5em;
 }
 
@@ -550,12 +541,17 @@ footer{
   height: 0.1em;
 }
 
-.card:nth-child(1) { order: 1; }
+  .card:nth-child(1) { order: 1; }
   .card:nth-child(2) { order: 3; }
   .card:nth-child(3) { order: 2; }
 
   .dark #one img{
     filter: contrast(0.991);
   }
+
+  .links ul li:nth-child(1) { order: 1; }
+  .links ul li:nth-child(2) { order: 4; }
+  .links ul li:nth-child(3) { order: 2; }
+  .links ul li:nth-child(4) { order: 3; }
 
 } 
