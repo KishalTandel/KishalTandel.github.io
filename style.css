@@ -362,11 +362,11 @@ li a:active{
 }
 
 .dark #one img{
-  filter: contrast(0.993)
+  filter: brightness(109%) contrast(1.006)
 }
 
 .light #one img{
-  filter: invert(1) brightness(130%);
+  filter: invert(1) brightness(80%) contrast(3);
 }
 
 #one img{
