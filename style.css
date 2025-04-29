@@ -213,7 +213,7 @@ main{
   flex-wrap : wrap;
   justify-content : top;
   align-items : center;
-  height : 38em;
+  height : 36.3em;
   border-radius : 0.5em;
   color: inherit;
   background-color: inherit;
@@ -414,7 +414,7 @@ li a:active{
   flex-direction: column;
   justify-content: space-evenly;
   align-items: left;
-  height: 13.7em;
+  height: 12.45em;
   text-align: left;
 }
 
@@ -652,10 +652,7 @@ footer{
     .card:nth-child(1) { order: 1; }
     .card:nth-child(2) { order: 3; }
     .card:nth-child(3) { order: 2; }
-  
-    .dark #one img{
-      filter: contrast(0.991);
-    }
+    
   
     .links ul li:nth-child(1) { order: 1; }
     .links ul li:nth-child(2) { order: 4; }
