@@ -436,7 +436,7 @@ li a:active{
   flex-direction: column;
   justify-content: space-evenly;
   align-items: left;
-  height: 23.5em;
+  height: 24.88em;
   text-align: left;
 }
 
@@ -502,7 +502,7 @@ nav{
 }
 
 .info_container{
-  height:7.5em;
+  height:5em;
 }
 
 .name{
@@ -610,7 +610,7 @@ footer{
   }
   
   .info_container{
-    height:7.5em;
+    height:5em;
   }
   
   .name{
