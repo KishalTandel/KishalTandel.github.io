@@ -603,9 +603,10 @@ footer{
   height: 0.1em;
 }
 
-.order-1 { order: 2; }
-.order-2 { order: 1; }
-.order-3 { order: 3; }
+.order-1 { order: 3; }
+.order-2 { order: 2; }
+.order-3 { order: 1; }
+.order-4 { order: 4; }  
 
   .dark #one img{
     filter: contrast(0.955);
@@ -712,9 +713,10 @@ footer{
     height: 0.1em;
   }
   
-  .order-1 { order: 2; }
-  .order-2 { order: 1; }
-  .order-3 { order: 3; }
+  .order-1 { order: 3; }
+  .order-2 { order: 2; }
+  .order-3 { order: 1; }
+  .order-4 { order: 4; }  
   
     .dark #one img{
       filter: contrast(0.955);
